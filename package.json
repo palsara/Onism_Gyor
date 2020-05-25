@@ -1,0 +1,20 @@
+{
+  "name": "onism_gyor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palsara/Onism_Gyor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/palsara/Onism_Gyor/issues"
+  },
+  "homepage": "https://github.com/palsara/Onism_Gyor#readme",
+  "devDependencies": {}
+}
