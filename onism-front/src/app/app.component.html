@@ -1,0 +1,58 @@
+<header class="d-flex flex-column align-items-center justify-content-center">
+  <h1 class="text-light">Önismeret Győr</h1>
+  <h3 class="text-light">"Úton önmagunkhoz, s így másokhoz is."</h3>
+</header>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+  <a class="navbar-brand ml-3" href="/">Önismeret Győr</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link ml-5" href="/">Főoldal <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/bemutatkozas">Bemutatkozás</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/szolgaltatasok">Szolgáltatások</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/onismeret">Önismeret</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/idopontok">Időpontok</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/blog">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/kapcsolat">Kapcsolat</a>
+      </li>
+      <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li> -->
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<footer class="text-center p-2">
+  <small>Copyright &copy; Tóth Katalin Ágnes 2020</small>
+</footer>

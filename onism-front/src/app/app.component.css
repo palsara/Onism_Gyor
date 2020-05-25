@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Vollkorn';
+  src: url('./../assets/fonts/Vollkorn-VariableFont_wght.ttf');
+}
+*{
+  font-family: 'Vollkorn';
+}
+body {
+  font-family: 'Vollkorn';
+  background-color: aliceblue;
+  font-family: '';
+}
+
+header {
+  font-family: 'Vollkorn';
+
+  width: 100vw;
+  height: 50vh;
+  background-image: url('../assets/images/DSC_0125.JPG');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #97B3D0FF;
+}
+
+footer {
+  background-color: #97B3D0FF;
+}
