@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-12">
+      <h3>Blog</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 mt-3">
+      <div *ngFor="let article of articles$|async" class="card mb-3" style="max-width: 100%;">
+        <div class="row no-gutters">
+          <div class="col-md-3">
+            <img src={{article.img}} class="card-img" alt="...">
+          </div>
+          <div class="col-md-9">
+            <div class="card-body text-justify">
+              <h5>{{article.title}}</h5>
+              <small>{{article.insdate|date}}</small>
+              <p class="card-text mt-1">{{article.shorttext}}</p>
+              <a href="/blog/{{article.seotitle}}" class="btn btn-info">Tovább olvasok</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

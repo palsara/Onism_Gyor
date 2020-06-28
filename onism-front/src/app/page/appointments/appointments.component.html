@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row mt-5">
+    <h3>Induló csoportok</h3>
+  </div>
+  <div class="row">
+    <div class="col-8 mt-3">
+      <table class="table table-responsive table-borderless">
+        <tbody>
+          <div *ngFor="let appointment of appointments$|async">
+            <tr>
+              <th>Helyszín:</th>
+              <td>{{appointment.location}}</td>
+            </tr>
+            <tr>
+              <th>Csoport:</th>
+              <td>{{appointment.group}}</td>
+            </tr>
+            <tr>
+              <th>Csoportlétszám:</th>
+              <td>{{appointment.groupnum}}</td>
+            </tr>
+            <tr>
+              <th>Időpont:</th>
+              <td>{{appointment.start}}</td>
+            </tr>
+            <h6 class="text-justify">{{appointment.description}}</h6>
+            <hr>
+          </div>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-4 text-center">
+      <div class="erdeklodes">
+        <h4>Érdeklődés és bővebb információ:</h4>
+        <p><b>Telefon: </b> +36-20/364-8501</p>
+        <p><b>E-mail: </b> onismeretgyor@gmail.com</p>
+        <h5>Várjuk jelentkezését!</h5>
+      </div>
+    </div>
+  </div>
+</div>

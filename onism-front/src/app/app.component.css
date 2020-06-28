@@ -2,9 +2,11 @@
   font-family: 'Vollkorn';
   src: url('./../assets/fonts/Vollkorn-VariableFont_wght.ttf');
 }
-*{
+
+* {
   font-family: 'Vollkorn';
 }
+
 body {
   font-family: 'Vollkorn';
   background-color: aliceblue;
@@ -13,7 +15,6 @@ body {
 
 header {
   font-family: 'Vollkorn';
-
   width: 100vw;
   height: 50vh;
   background-image: url('../assets/images/DSC_0125.JPG');
@@ -29,4 +30,7 @@ header {
 
 footer {
   background-color: #97B3D0FF;
+  clear: both;
+  position: relative;
+  bottom: 0;
 }

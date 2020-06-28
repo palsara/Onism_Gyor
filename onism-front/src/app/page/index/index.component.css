@@ -1,0 +1,28 @@
+.forras-container,
+.felhivas-container {
+  margin-left: calc((100vw - 100%) / -2) !important;
+  padding-left: calc((100vw - 100%) / 2);
+  margin-right: calc((100vw - 100%) / -2) !important;
+  padding-right: calc((100vw - 100%) / 2);
+  background-color: #b8c36b;
+}
+
+.velemenyek {
+  margin-left: calc((100vw - 100%) / -2) !important;
+  padding-left: calc((100vw - 100%) / 2);
+  margin-right: calc((100vw - 100%) / -2) !important;
+  padding-right: calc((100vw - 100%) / 2);
+  background-image: url('../../../assets/images/pipacsok2.jpg');
+  height: 300px;
+  background-attachment: fixed;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-img-top {
+  max-height: 140px;
+  margin: auto;
+  object-fit: fit;
+  overflow: hidden;
+}

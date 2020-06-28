@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row mt-5 mb-5">
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col d-flex justify-content-center align-items-center">
+          <img class="article-img" src="{{ article.img }}" alt="" />
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <h3>{{ article.title }}</h3>
+          <small>{{ article.insdate | date }}</small>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12 text-justify">
+          {{ article.text }}
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="side-info">
+        <h5>Kapcsolódó címkék</h5>
+        <hr />
+        <a href="" *ngFor="let tag of article.keywords.split(',')" class="btn btn-outline-secondary">{{ tag }}</a>
+        <h5 class="mt-5">Legutóbbi cikkek</h5>
+        <hr />
+        <ul class="recent-articles">
+          <li *ngFor="let recent of recentArticles$ | async">
+            <div class="row">
+              <div class="col-4">
+                <img class="small-round-img" src="{{ recent.img }}" alt="" />
+              </div>
+              <div class="col-8">
+                <a class="text-dark" href="blog/{{ recent.seotitle }}">
+                  <h5>{{ recent.title }}</h5>
+                </a>
+                <small>{{ recent.insdate | date }}</small>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <h5 class="mt-5">Önismereti teszt</h5>
+        <hr>
+        <div class="col-8">
+          <a href="/teszt" class="btn btn-outline-secondary">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+            Indítás</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
